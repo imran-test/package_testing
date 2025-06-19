@@ -8,8 +8,7 @@ phases:
       - pip install -r requirements.txt -t python/
   build:
     commands:
-      - cp lambda_function.py python/
-      - zip -r function.zip python/
+      - zip -r function.zip lambda_function.py python/
 
 artifacts:
   files:
